@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile MCBE Tiers | Rankings</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">MOBILE<span class="highlight">MCBE</span>TIERS</a>
+            <ul class="nav-links">
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#" class="active"><i class="fas fa-trophy"></i> Rankings</a></li>
+                <li><a href="#"><i class="fab fa-discord"></i> Discord</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>MCBE Competitive Rankings</h1>
+        <p>The official tier list for Mobile & Bedrock Edition PvP</p>
+    </header>
+
+    <main class="container">
+        <div class="category-tabs">
+            <button class="tab-btn active" onclick="filterTier('all')">Overall</button>
+            <button class="tab-btn" onclick="filterTier('sword')">Sword</button>
+            <button class="tab-btn" onclick="filterTier('nethpot')">NethPot</button>
+            <button class="tab-btn" onclick="filterTier('crystal')">Crystal</button>
+            <button class="tab-btn" onclick="filterTier('boxing')">Boxing</button>
+        </div>
+
+        <div class="ranking-card">
+            <table id="ranking-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Player</th>
+                        <th>Region</th>
+                        <th>Tier</th>
+                    </tr>
+                </thead>
+                <tbody id="player-data">
+                    <!-- Data will be inserted here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
